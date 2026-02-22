@@ -1,324 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dra. Valesca Cassiano | Direito Trabalhista</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-
-body{
-font-family:'Montserrat',sans-serif;
-background:#0f0f0f;
-color:#ffffff;
-line-height:1.7;
-}
-
-/* HEADER */
-
-header{
-background:#0b0b0b;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #1f1f1f;
-}
-
-.logo img{
-height:55px;
-}
-
-.header-whatsapp{
-background:#25D366;
-color:#fff;
-padding:14px 28px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-box-shadow:0 8px 20px rgba(0,0,0,0.35);
-transition:.3s;
-}
-
-.header-whatsapp:hover{background:#1ebe5d}
-
-/* HERO */
-
-.hero{
-padding:120px 8% 100px;
-text-align:center;
-background:linear-gradient(to bottom,#0b0b0b 0%,#141414 100%);
-}
-
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:56px;
-font-weight:600;
-margin-bottom:30px;
-}
-
-.hero p{
-max-width:820px;
-margin:0 auto 40px;
-font-size:18px;
-color:#d6d6d6;
-}
-
-.hero .btn-main{
-background:#25D366;
-color:#fff;
-padding:18px 44px;
-border-radius:40px;
-text-decoration:none;
-font-size:18px;
-font-weight:600;
-box-shadow:0 15px 35px rgba(0,0,0,.4);
-transition:.3s;
-}
-
-.hero .btn-main:hover{background:#1ebe5d}
-
-/* SECTIONS */
-
-.section{
-padding:90px 8%;
-background:#111;
-}
-
-.section.light{background:#151515}
-
-.section h2{
-font-family:'Playfair Display',serif;
-font-size:38px;
-margin-bottom:40px;
-text-align:center;
-}
-
-.section p{
-max-width:900px;
-margin:0 auto 20px;
-color:#d0d0d0;
-}
-
-.highlight{
-color:#25D366;
-font-weight:600;
-}
-
-/* AREAS */
-
-.areas{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-top:50px;
-}
-
-.area-box{
-background:#0f0f0f;
-padding:30px;
-border-radius:12px;
-border:1px solid #222;
-}
-
-.area-box h3{
-font-family:'Playfair Display',serif;
-font-size:22px;
-margin-bottom:15px;
-}
-
-.area-box p{
-font-size:15px;
-}
-
-/* COMO FUNCIONA */
-
-.steps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:40px;
-margin-top:60px;
-}
-
-.step{
-background:#0f0f0f;
-padding:35px;
-border-radius:12px;
-border:1px solid #222;
-}
-
-.step span{
-font-size:40px;
-font-weight:700;
-color:#25D366;
-display:block;
-margin-bottom:15px;
-}
-
-.step h4{
-font-size:20px;
-margin-bottom:10px;
-}
-
-/* CTA FINAL */
-
-.cta{
-text-align:center;
-padding:100px 8%;
-background:linear-gradient(to bottom,#0f0f0f,#151515);
-}
-
-.cta h2{
-font-family:'Playfair Display',serif;
-font-size:40px;
-margin-bottom:30px;
-}
-
-.cta a{
-background:#25D366;
-color:#fff;
-padding:18px 50px;
-border-radius:40px;
-font-size:20px;
-font-weight:600;
-text-decoration:none;
-box-shadow:0 15px 35px rgba(0,0,0,.45);
-}
-
-/* WHATSAPP FLOAT */
-
-.whatsapp-float{
-position:fixed;
-bottom:22px;
-right:22px;
-background:#25D366;
-color:#fff;
-padding:16px 26px;
-border-radius:50px;
-font-weight:600;
-text-decoration:none;
-box-shadow:0 12px 30px rgba(0,0,0,.45);
-z-index:999;
-}
-
-/* FOOTER */
-
-footer{
-background:#0b0b0b;
-padding:60px 20px;
-text-align:center;
-color:#bcbcbc;
-}
-
-footer strong{color:#fff}
-
-@media(max-width:768px){
-.hero h1{font-size:38px}
-.section h2{font-size:30px}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Valesca Cassiano | Advocacia Trabalhista</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-<div class="logo">
-<img src="logo-vc.png" alt="Dra. Valesca Cassiano">
-</div>
-<a href="https://wa.me/5511940165873" class="header-whatsapp">Atendimento Imediato</a>
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5511940165873" class="whatsapp-float" target="_blank">
+  WhatsApp
+</a>
+
+<header class="header">
+  <div class="container header-flex">
+    <!-- LOGO -->
+    <div class="logo">
+      <!-- Suba sua logo em /assets/logo.png -->
+      <img src="assets/logo.png" alt="Dra. Valesca Cassiano">
+    </div>
+
+    <a href="https://wa.me/5511940165873" class="btn-header">
+      FALE AGORA COM A DRA. VALESCA CASSIANO
+    </a>
+  </div>
 </header>
 
 <section class="hero">
-<h1>Advocacia Trabalhista Estratégica</h1>
-<p>
-Atuação especializada na defesa dos direitos do trabalhador, com atendimento 100% online, estratégico e humanizado.
-</p>
-<a href="https://wa.me/5511940165873" class="btn-main">Falar com a Advogada Agora</a>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>
+        Advocacia Trabalhista Especializada na Defesa dos Direitos do Trabalhador
+      </h1>
+      <p>
+        Atuamos de forma estratégica e personalizada para garantir que seus direitos trabalhistas sejam respeitados.
+        Atendimento online, com agilidade, transparência e compromisso.
+      </p>
+      <a href="https://wa.me/5511940165873" class="btn-primary">
+        FALE AGORA COM A DRA. VALESCA CASSIANO
+      </a>
+    </div>
+
+    <!-- FOTO DA DOUTORA -->
+    <div class="hero-image">
+      <!-- Suba sua foto em /assets/foto-dra.jpg -->
+      <img src="assets/foto-dra.jpg" alt="Dra. Valesca Cassiano">
+    </div>
+  </div>
 </section>
 
-<section class="section">
-<h2>Atuação em <span class="highlight">Direito Trabalhista</span></h2>
-<p>
-A Dra. Valesca Cassiano atua exclusivamente na defesa dos direitos trabalhistas, oferecendo orientação jurídica clara, técnica e estratégica em todas as fases do processo.
-</p>
+<section class="areas">
+  <div class="container">
+    <h2>Áreas de Atuação</h2>
 
-<div class="areas">
-<div class="area-box">
-<h3>Rescisão e Verbas</h3>
-<p>Análise completa de verbas rescisórias, aviso prévio, multa do FGTS e acertos pendentes.</p>
-</div>
-
-<div class="area-box">
-<h3>Horas Extras</h3>
-<p>Reconhecimento e cobrança de horas extras não pagas, adicionais e reflexos legais.</p>
-</div>
-
-<div class="area-box">
-<h3>FGTS</h3>
-<p>Regularização, cobrança de depósitos em atraso e indenizações.</p>
-</div>
-
-<div class="area-box">
-<h3>Assédio Moral</h3>
-<p>Atuação firme em casos de abuso psicológico e ambientes de trabalho tóxicos.</p>
-</div>
-
-<div class="area-box">
-<h3>Justa Causa</h3>
-<p>Análise e reversão de demissões injustas aplicadas de forma indevida.</p>
-</div>
-
-<div class="area-box">
-<h3>Vínculo Empregatício</h3>
-<p>Reconhecimento de vínculo para autônomos, PJ e contratos irregulares.</p>
-</div>
-</div>
+    <div class="cards">
+      <div class="card">Rescisão de Contrato de Trabalho</div>
+      <div class="card">Verbas Rescisórias</div>
+      <div class="card">Horas Extras</div>
+      <div class="card">FGTS e Multa de 40%</div>
+      <div class="card">Justa Causa</div>
+      <div class="card">Reconhecimento de Vínculo Empregatício</div>
+      <div class="card">Assédio Moral</div>
+      <div class="card">Acidente de Trabalho</div>
+      <div class="card">Estabilidade Provisória</div>
+      <div class="card">Direitos do Empregado</div>
+    </div>
+  </div>
 </section>
 
-<section class="section light">
-<h2>Como Funciona</h2>
+<section class="about">
+  <div class="container">
+    <h2>Atuação Estratégica e Humanizada</h2>
+    <p>
+      A Dra. Valesca Cassiano atua com foco na defesa dos direitos do trabalhador,
+      oferecendo um atendimento ético, transparente e personalizado.
+      Cada caso é analisado com atenção aos detalhes, buscando sempre a melhor solução jurídica.
+    </p>
+  </div>
+</section>
 
-<div class="steps">
-<div class="step">
-<span>01</span>
-<h4>Contato Inicial</h4>
-<p>Você entra em contato e relata sua situação diretamente à advogada.</p>
-</div>
+<section class="how-it-works">
+  <div class="container">
+    <h2>Como Funciona o Atendimento</h2>
 
-<div class="step">
-<span>02</span>
-<h4>Análise Jurídica</h4>
-<p>Seu caso é analisado de forma técnica e estratégica, com total transparência.</p>
-</div>
+    <div class="steps">
+      <div class="step">
+        <span>1</span>
+        <p>Análise detalhada do seu caso</p>
+      </div>
+      <div class="step">
+        <span>2</span>
+        <p>Orientação jurídica clara e objetiva</p>
+      </div>
+      <div class="step">
+        <span>3</span>
+        <p>Definição da melhor estratégia jurídica</p>
+      </div>
+      <div class="step">
+        <span>4</span>
+        <p>Acompanhamento completo do processo</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="step">
-<span>03</span>
-<h4>Atuação Completa</h4>
-<p>Acompanhamento integral do processo até a solução mais vantajosa.</p>
-</div>
-</div>
+<section class="reviews">
+  <div class="container">
+    <h2>O que dizem nossos clientes</h2>
+
+    <div class="review-cards">
+      <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>Atendimento excelente, profissional e atencioso. Recomendo!</p>
+      </div>
+      <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>Esclareceu todas as minhas dúvidas e conduziu meu caso com muita competência.</p>
+      </div>
+      <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>Profissional extremamente dedicada e comprometida com o cliente.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="cta">
-<h2>Fale Agora com uma Advogada Especialista</h2>
-<a href="https://wa.me/5511940165873">Atendimento via WhatsApp</a>
+  <div class="container">
+    <h2>Fale agora com uma advogada especializada</h2>
+    <a href="https://wa.me/5511940165873" class="btn-primary">
+      FALE AGORA COM A DRA. VALESCA CASSIANO
+    </a>
+  </div>
 </section>
 
-<a href="https://wa.me/5511940165873" class="whatsapp-float">
-WhatsApp
-</a>
-
-<footer>
-<p><strong>Dra. Valesca Cassiano</strong></p>
-<p>Valesca Cassiano Silva Vaccari</p>
-<p>OAB/SP 317.259</p>
-<p>Atendimento 100% Online</p>
-<p>WhatsApp: +55 11 94016-5873</p>
-<p style="margin-top:20px;font-size:13px;">© 2026 - Todos os direitos reservados.</p>
+<footer class="footer">
+  <div class="container">
+    <p>
+      Dra. Valesca Cassiano – OAB/SP 317.259<br>
+      Atendimento 100% online | Advocacia Trabalhista
+    </p>
+  </div>
 </footer>
 
 </body>
-  </html>
+</html>
