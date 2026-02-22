@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dra. Valesca Cassiano Silva Vaccari | Advogada</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
-/* RESET */
 
 *{
 margin:0;
@@ -17,13 +16,8 @@ padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 font-family:'Montserrat', sans-serif;
-background:#ffffff;
 color:#111;
 }
 
@@ -33,20 +27,13 @@ max-width:1180px;
 margin:auto;
 }
 
-/* HEADER */
-
 header{
-width:100%;
 position:fixed;
+width:100%;
 top:0;
-z-index:1000;
-padding:22px 0;
-transition:.3s;
-}
-
-header.scrolled{
-background:#000;
-padding:16px 0;
+background:rgba(0,0,0,0.85);
+z-index:999;
+padding:18px 0;
 }
 
 .header-flex{
@@ -56,33 +43,18 @@ align-items:center;
 }
 
 .logo img{
-height:62px;
+height:60px;
 }
-
-.btn-primary{
-background:#c6a25a;
-color:#000;
-padding:16px 32px;
-border-radius:40px;
-text-decoration:none;
-font-size:13px;
-letter-spacing:1px;
-font-weight:600;
-display:inline-block;
-}
-
-/* HERO */
 
 .hero{
 height:100vh;
-min-height:720px;
 background:url('foto-dra.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 position:relative;
 }
 
-.hero::before{
+.hero:before{
 content:"";
 position:absolute;
 inset:0;
@@ -91,173 +63,140 @@ background:rgba(0,0,0,0.65);
 
 .hero-content{
 position:relative;
-color:#fff;
-max-width:680px;
+color:white;
+max-width:650px;
 }
 
 .hero h1{
-font-family:'Playfair Display', serif;
-font-size:58px;
+font-size:54px;
 margin-bottom:20px;
+font-family:'Playfair Display', serif;
 }
 
 .hero p{
 font-size:18px;
-line-height:1.8;
-margin-bottom:36px;
+margin-bottom:30px;
+line-height:1.7;
 }
 
-/* SECTION */
+.btn-yellow{
+background:#ffc400;
+color:#000;
+padding:16px 34px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+border-radius:4px;
+}
+
+.stars{
+margin-top:15px;
+color:#ffc400;
+font-size:18px;
+}
 
 .section{
 padding:110px 0;
 }
 
-.section h2{
-font-family:'Playfair Display', serif;
-font-size:42px;
-margin-bottom:20px;
-text-align:center;
+.grid-4{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:40px;
+margin-top:50px;
 }
 
-.section p{
-font-size:17px;
-line-height:1.9;
-text-align:center;
-margin:auto;
-max-width:800px;
+.box{
+border:1px solid #eee;
+padding:35px;
 }
 
-/* AREAS */
+.box h3{
+margin-bottom:10px;
+font-size:22px;
+}
 
 .areas{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-margin-top:60px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+margin-top:40px;
 }
 
-.area-box{
+.area{
 border:1px solid #eee;
-padding:40px;
-text-align:center;
+padding:25px;
 }
 
-.area-box h3{
-font-family:'Playfair Display', serif;
+.area h4{
 margin-bottom:10px;
 }
-
-/* BOTÃO CENTRAL */
 
 .center{
 text-align:center;
 margin-top:50px;
 }
 
-/* COMO FUNCIONA */
-
 .steps{
-margin-top:60px;
-display:flex;
-flex-direction:column;
-gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:40px;
+margin-top:40px;
 }
 
-.step{
-border:1px solid #ddd;
-padding:40px;
-text-align:center;
-}
-
-.step-number{
-font-size:40px;
+.step span{
+font-size:46px;
 font-weight:700;
-margin-bottom:10px;
 }
 
-/* ADVOGADA */
-
-.profile{
-text-align:center;
-padding:90px 0;
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
 }
 
-.profile img{
-width:220px;
-border-radius:12px;
-margin-bottom:20px;
+.about img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
 .badge{
+background:#ffc400;
 display:inline-block;
-margin-bottom:20px;
-padding:8px 18px;
-border:1px solid #c6a25a;
-border-radius:30px;
-font-size:13px;
+padding:10px 18px;
+margin:15px 0;
+font-weight:600;
 }
-
-/* REVIEWS */
 
 .reviews{
-background:#fafafa;
-padding:100px 0;
-text-align:center;
-}
-
-.review-slider{
-display:flex;
-gap:25px;
 overflow-x:auto;
-padding-top:40px;
+display:flex;
+gap:20px;
+padding:20px 0;
 scroll-snap-type:x mandatory;
 }
 
 .review{
-min-width:320px;
-background:#fff;
-border-radius:10px;
-padding:25px;
-text-align:left;
+min-width:300px;
 border:1px solid #eee;
+padding:20px;
 scroll-snap-align:start;
-}
-
-.stars{
-color:#f5b400;
-font-size:18px;
-margin:6px 0;
-}
-
-/* CTA FINAL */
-
-.cta-final{
-background:#0f0f0f;
-color:#fff;
-padding:100px 0;
-text-align:center;
 }
 
 footer{
 background:#000;
 color:#fff;
-padding:30px;
 text-align:center;
+padding:30px;
+margin-top:60px;
 }
-
-/* RESPONSIVO */
 
 @media(max-width:900px){
-
-.areas{
+.about{
 grid-template-columns:1fr;
 }
-
-.hero h1{
-font-size:38px;
-}
-
 }
 
 </style>
@@ -265,93 +204,125 @@ font-size:38px;
 
 <body>
 
-<header id="header">
+<header>
 <div class="container header-flex">
-
 <div class="logo">
 <img src="logo.png">
 </div>
-
-<a href="https://wa.me/5511940165873" class="btn-primary">
-WHATSAPP
-</a>
-
+<a href="https://wa.me/5511940165873" class="btn-yellow">WHATSAPP</a>
 </div>
 </header>
 
-<section class="hero">
 
+<section class="hero">
 <div class="container hero-content">
 
 <h1>Advocacia Especializada em Direito Trabalhista</h1>
 
 <p>
-Valesca Cassiano Silva Vaccari, inscrita na OAB/SP 317.259,
-com mais de 15 anos de experiência, especialista em Direito do Trabalho,
-atua através de um atendimento rápido e exclusivo, de forma estratégica,
-técnica e personalizada.
+Valesca Cassiano Silva Vaccari, inscrita na OAB/SP 317.259, com mais de 15 anos de experiência, especialista em Direito do Trabalho, atua com atendimento rápido, estratégico e personalizado.
 </p>
 
-<a href="https://wa.me/5511940165873" class="btn-primary">
-ENTRAR EM CONTATO
+<a href="https://wa.me/5511940165873" class="btn-yellow">
+CLIQUE AQUI PARA FALAR COM A ADVOGADA ESPECIALISTA
 </a>
 
+<div class="stars">
+★★★★★ Avaliação máxima no Google
 </div>
-</section>
-
-<section class="section">
-<div class="container">
-
-<h2>Sobre a Advogada</h2>
-
-<p>
-A Dra. Valesca Cassiano Silva Vaccari conduz sua atuação com excelência técnica,
-responsabilidade e comprometimento com cada cliente.
-</p>
-
-<p>
-Sua experiência permite oferecer soluções jurídicas consistentes,
-alinhadas às necessidades específicas de cada caso.
-</p>
 
 </div>
 </section>
 
+
 <section class="section">
 <div class="container">
 
-<h2>Áreas de Atuação</h2>
+<h2>Por que nosso escritório é a melhor opção para você?</h2>
+
+<div class="grid-4">
+
+<div class="box">
+<h3>2.200 Processos</h3>
+<p>Já atuamos em centenas de processos trabalhistas e estamos familiarizados com diversos tipos de casos.</p>
+</div>
+
+<div class="box">
+<h3>+ de 8.000 Clientes Satisfeitos</h3>
+<p>Prezamos pela qualidade do atendimento e pela satisfação de cada cliente.</p>
+</div>
+
+<div class="box">
+<h3>Advogada Especialista</h3>
+<p>Escritório especializado em Direito Trabalhista com ampla experiência.</p>
+</div>
+
+<div class="box">
+<h3>Agilidade</h3>
+<p>Sabemos que o trabalhador tem pressa em receber seus direitos.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section">
+<div class="container">
+
+<h2>Áreas de atuação</h2>
 
 <div class="areas">
 
-<div class="area-box">
-<h3>Direito Civil</h3>
-<p>Atuação estratégica na defesa dos interesses do cliente.</p>
-</div>
+<div class="area"><h4>Rescisão Contratual</h4><p>Encerramento do vínculo empregatício entre trabalhador e empresa.</p></div>
 
-<div class="area-box">
-<h3>Direito de Família</h3>
-<p>Condução humanizada em demandas familiares.</p>
-</div>
+<div class="area"><h4>Reconhecimento de Vínculo Empregatício</h4><p>Trabalho sem registro que deve ser reconhecido legalmente.</p></div>
 
-<div class="area-box">
-<h3>Direito Empresarial</h3>
-<p>Assessoria preventiva e contenciosa empresarial.</p>
-</div>
+<div class="area"><h4>Dano Moral</h4><p>Violação da honra, imagem ou dignidade do trabalhador.</p></div>
+
+<div class="area"><h4>Assédio Moral</h4><p>Situações humilhantes e constrangedoras no ambiente de trabalho.</p></div>
+
+<div class="area"><h4>Horas Extras</h4><p>Cobrança de horas trabalhadas além da jornada legal.</p></div>
+
+<div class="area"><h4>Cálculo de Verbas Rescisórias</h4><p>Valores devidos ao trabalhador no fim do contrato.</p></div>
+
+<div class="area"><h4>Justa Causa</h4><p>Análise da legalidade da demissão aplicada pela empresa.</p></div>
+
+<div class="area"><h4>Estabilidade da Gestante</h4><p>Garantia de emprego desde a concepção até 5 meses após o parto.</p></div>
+
+<div class="area"><h4>Desvio de Função</h4><p>Quando o funcionário exerce função diferente da contratada.</p></div>
+
+<div class="area"><h4>Acúmulo de Função</h4><p>Quando o trabalhador passa a desempenhar funções extras.</p></div>
+
+<div class="area"><h4>Doença Ocupacional</h4><p>Doença adquirida em razão da atividade profissional.</p></div>
+
+<div class="area"><h4>Acidente de Trabalho</h4><p>Lesão ocorrida durante o exercício da função.</p></div>
+
+<div class="area"><h4>FGTS, Férias e 13º</h4><p>Direitos trabalhistas não pagos pela empresa.</p></div>
+
+<div class="area"><h4>Falta de Depósito do FGTS</h4><p>Ausência de recolhimento do fundo de garantia.</p></div>
+
+<div class="area"><h4>Insalubridade</h4><p>Exposição a condições prejudiciais à saúde.</p></div>
+
+<div class="area"><h4>Periculosidade</h4><p>Trabalho em situação de risco.</p></div>
+
+<div class="area"><h4>Pagamento "por fora"</h4><p>Salário sem registro na carteira.</p></div>
+
+<div class="area"><h4>Descanso Não Concedido</h4><p>Violação do intervalo mínimo entre jornadas.</p></div>
 
 </div>
 
 <div class="center">
-<a href="https://wa.me/5511940165873" class="btn-primary">
-CLIQUE AQUI PARA FALAR COM UM ESPECIALISTA
+<a href="https://wa.me/5511940165873" class="btn-yellow">
+CLIQUE AQUI PARA FALAR COM A ADVOGADA ESPECIALISTA
 </a>
 </div>
 
 </div>
 </section>
 
-<section class="section">
 
+<section class="section">
 <div class="container">
 
 <h2>Como vai funcionar?</h2>
@@ -359,27 +330,18 @@ CLIQUE AQUI PARA FALAR COM UM ESPECIALISTA
 <div class="steps">
 
 <div class="step">
-<div class="step-number">1</div>
-<p>
-Clique em um dos botões de contato que estão aparecendo na tela.
-Uma conversa será aberta no WhatsApp e você poderá falar sobre seu caso.
-</p>
+<span>1</span>
+<p>Clique em um dos botões de contato exibidos na tela e converse pelo WhatsApp.</p>
 </div>
 
 <div class="step">
-<div class="step-number">2</div>
-<p>
-Após a conversa, elaboramos um plano de ação com as melhores estratégias
-jurídicas para garantir seus direitos trabalhistas.
-</p>
+<span>2</span>
+<p>Elaboramos uma estratégia jurídica personalizada para o seu caso.</p>
 </div>
 
 <div class="step">
-<div class="step-number">3</div>
-<p>
-Por fim, solicitamos alguns documentos e damos início aos procedimentos
-judiciais para garantir que você receba seus direitos no menor tempo possível.
-</p>
+<span>3</span>
+<p>Solicitamos os documentos e iniciamos o processo para garantir seus direitos.</p>
 </div>
 
 </div>
@@ -387,69 +349,69 @@ judiciais para garantir que você receba seus direitos no menor tempo possível.
 </div>
 </section>
 
-<section class="profile">
 
+<section class="section">
 <div class="container">
+
+<div class="about">
 
 <img src="foto-dra.jpg">
 
-<div class="badge">
-15+ anos de experiência
-</div>
+<div>
 
 <h2>Dra. Valesca Cassiano Silva Vaccari</h2>
 
+<div class="badge">15+ anos de experiência</div>
+
 <p>
-É uma advogada especializada em direito trabalhista, com mais de 15 anos de experiência.
-Oferecemos serviços online para proporcionar mais agilidade ao seu processo.
+Advogada especializada em Direito Trabalhista, com mais de 15 anos de experiência. Atendimento online para maior agilidade no seu processo.
 </p>
 
 <p>
-Atendemos empregados de todas as categorias profissionais, além de sindicatos e
-associações que defendem os direitos dos trabalhadores.
+Atendemos empregados de todas as categorias profissionais, além de sindicatos e associações.
 </p>
 
-<div class="center">
-<a href="https://wa.me/5511940165873" class="btn-primary">
+<a href="https://wa.me/5511940165873" class="btn-yellow">
 FALE AGORA COM A DRA. VALESCA CASSIANO
 </a>
+
+</div>
+
 </div>
 
 </div>
 </section>
 
-<section class="reviews">
 
+<section class="section">
 <div class="container">
 
-<h2>Nossas avaliações no Google</h2>
+<h2>Avaliações de clientes</h2>
 
-<p>Confiança, qualidade e profissionalismo.</p>
-
-<div class="review-slider">
+<div class="reviews">
 
 <div class="review">
-<strong>Daniel Lucio</strong>
-<div class="stars">★★★★★</div>
-<p>
-É uma excelente advogada, muito atenciosa e competente no que faz.
-Super recomendo, tem grande bagagem na sua profissão.
-</p>
+★★★★★
+<p>Excelente atendimento e muita atenção ao meu caso.</p>
+<strong>Cliente Google</strong>
 </div>
 
 <div class="review">
-<strong>Jocimara de Jesus</strong>
-<div class="stars">★★★★★</div>
-<p>
-A melhor advogada, não troco nunca.
-Parabéns Dra., excelente trabalho.
-</p>
+★★★★★
+<p>Profissional extremamente competente.</p>
+<strong>Cliente Google</strong>
+</div>
+
+<div class="review">
+★★★★★
+<p>Resolveu meu problema trabalhista rapidamente.</p>
+<strong>Cliente Google</strong>
 </div>
 
 </div>
 
-<div class="center" style="margin-top:40px;">
-<a href="https://wa.me/5511940165873" class="btn-primary">
+<div class="center">
+<a href="https://wa.me/5511940165873" class="btn-yellow">
 FALE AGORA COM A ADVOGADA ESPECIALISTA
 </a>
 </div>
@@ -457,40 +419,12 @@ FALE AGORA COM A ADVOGADA ESPECIALISTA
 </div>
 </section>
 
-<section class="cta-final">
-
-<div class="container">
-
-<h2>Precisa de orientação jurídica?</h2>
-
-<p>Fale diretamente com a advogada pelo WhatsApp.</p>
-
-<a href="https://wa.me/5511940165873" class="btn-primary">
-FALAR AGORA
-</a>
-
-</div>
-
-</section>
 
 <footer>
-Dra. Valesca Cassiano Silva Vaccari | OAB/SP 317.259
+Dra. Valesca Cassiano Silva Vaccari | OAB/SP 317.259  
 <br>
 © 2026 - Todos os direitos reservados
 </footer>
 
-<script>
-
-window.addEventListener("scroll", function(){
-const header = document.getElementById("header");
-if(window.scrollY > 50){
-header.classList.add("scrolled");
-}else{
-header.classList.remove("scrolled");
-}
-});
-
-</script>
-
 </body>
-   </html>
+</html>
