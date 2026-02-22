@@ -1,150 +1,240 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Valesca Cassiano | Advocacia Trabalhista</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dra. Valesca Cassiano | Direito Trabalhista</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Montserrat',sans-serif;
+color:#1c1c1c;
+background:#ffffff;
+line-height:1.7;
+}
+
+/* HEADER */
+header{
+background:#111;
+padding:22px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
+height:58px;
+}
+
+.header-btn{
+background:#c9a24d;
+color:#111;
+padding:14px 34px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.header-btn:hover{
+background:#b8933f;
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(180deg,#111 0%,#2a2a2a 100%);
+color:#fff;
+padding:120px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:58px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:720px;
+margin:0 auto 40px;
+font-size:18px;
+}
+
+.hero .btn-main{
+background:#c9a24d;
+color:#111;
+padding:18px 42px;
+border-radius:40px;
+font-size:18px;
+font-weight:600;
+text-decoration:none;
+}
+
+/* FOTO DRA */
+.foto-dra{
+padding:90px 20px;
+text-align:center;
+}
+
+.foto-dra img{
+width:100%;
+max-width:520px;
+border-radius:10px;
+}
+
+/* ATUAÇÃO */
+.section{
+padding:90px 8%;
+text-align:center;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:36px;
+margin-bottom:30px;
+}
+
+.section p{
+max-width:900px;
+margin:0 auto 20px;
+}
+
+/* CARROSSEL GOOGLE */
+.reviews{
+background:#f6f6f6;
+padding:80px 0;
+overflow:hidden;
+}
+
+.reviews h2{
+text-align:center;
+font-family:'Playfair Display',serif;
+margin-bottom:50px;
+}
+
+.carousel{
+display:flex;
+gap:30px;
+animation:scroll 40s linear infinite;
+}
+
+.review{
+background:#fff;
+border-radius:12px;
+padding:24px;
+min-width:320px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.review strong{
+display:block;
+margin-bottom:8px;
+}
+
+.stars{
+color:#fbbc04;
+margin-bottom:10px;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:16px 26px;
+border-radius:40px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:#ccc;
+padding:50px 20px;
+text-align:center;
+}
+
+footer strong{color:#fff}
+
+@media(max-width:768px){
+.hero h1{font-size:40px}
+}
+</style>
 </head>
+
 <body>
 
-<!-- BOTÃO FLUTUANTE WHATSAPP -->
-<a href="https://wa.me/5511940165873" class="whatsapp-float" target="_blank">
-  WhatsApp
-</a>
-
-<header class="header">
-  <div class="container header-flex">
-    <!-- LOGO -->
-    <div class="logo">
-      <!-- Suba sua logo em /assets/logo.png -->
-      <img src="assets/logo.png" alt="Dra. Valesca Cassiano">
-    </div>
-
-    <a href="https://wa.me/5511940165873" class="btn-header">
-      FALE AGORA COM A DRA. VALESCA CASSIANO
-    </a>
-  </div>
+<header>
+<div class="logo">
+<img src="assets/logo.png" alt="Dra. Valesca Cassiano">
+</div>
+<a href="https://wa.me/5511940165873" class="header-btn">Fale com a Advogada</a>
 </header>
 
 <section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>
-        Advocacia Trabalhista Especializada na Defesa dos Direitos do Trabalhador
-      </h1>
-      <p>
-        Atuamos de forma estratégica e personalizada para garantir que seus direitos trabalhistas sejam respeitados.
-        Atendimento online, com agilidade, transparência e compromisso.
-      </p>
-      <a href="https://wa.me/5511940165873" class="btn-primary">
-        FALE AGORA COM A DRA. VALESCA CASSIANO
-      </a>
-    </div>
-
-    <!-- FOTO DA DOUTORA -->
-    <div class="hero-image">
-      <!-- Suba sua foto em /assets/foto-dra.jpg -->
-      <img src="assets/foto-dra.jpg" alt="Dra. Valesca Cassiano">
-    </div>
-  </div>
+<h1>Direito Trabalhista</h1>
+<p>Atendimento jurídico estratégico, humano e eficaz para trabalhadores e empresas.</p>
+<a href="https://wa.me/5511940165873" class="btn-main">Atendimento via WhatsApp</a>
 </section>
 
-<section class="areas">
-  <div class="container">
-    <h2>Áreas de Atuação</h2>
-
-    <div class="cards">
-      <div class="card">Rescisão de Contrato de Trabalho</div>
-      <div class="card">Verbas Rescisórias</div>
-      <div class="card">Horas Extras</div>
-      <div class="card">FGTS e Multa de 40%</div>
-      <div class="card">Justa Causa</div>
-      <div class="card">Reconhecimento de Vínculo Empregatício</div>
-      <div class="card">Assédio Moral</div>
-      <div class="card">Acidente de Trabalho</div>
-      <div class="card">Estabilidade Provisória</div>
-      <div class="card">Direitos do Empregado</div>
-    </div>
-  </div>
+<section class="foto-dra">
+<img src="assets/foto-dra.jpg" alt="Dra. Valesca Cassiano">
 </section>
 
-<section class="about">
-  <div class="container">
-    <h2>Atuação Estratégica e Humanizada</h2>
-    <p>
-      A Dra. Valesca Cassiano atua com foco na defesa dos direitos do trabalhador,
-      oferecendo um atendimento ético, transparente e personalizado.
-      Cada caso é analisado com atenção aos detalhes, buscando sempre a melhor solução jurídica.
-    </p>
-  </div>
-</section>
-
-<section class="how-it-works">
-  <div class="container">
-    <h2>Como Funciona o Atendimento</h2>
-
-    <div class="steps">
-      <div class="step">
-        <span>1</span>
-        <p>Análise detalhada do seu caso</p>
-      </div>
-      <div class="step">
-        <span>2</span>
-        <p>Orientação jurídica clara e objetiva</p>
-      </div>
-      <div class="step">
-        <span>3</span>
-        <p>Definição da melhor estratégia jurídica</p>
-      </div>
-      <div class="step">
-        <span>4</span>
-        <p>Acompanhamento completo do processo</p>
-      </div>
-    </div>
-  </div>
+<section class="section">
+<h2>A Dra. Valesca Cassiano atua</h2>
+<p>
+A Dra. Valesca Cassiano atua na área do Direito Trabalhista, com mais de
+<strong>11 anos de experiência</strong>, oferecendo soluções jurídicas seguras,
+estratégicas e personalizadas para cada caso.
+</p>
 </section>
 
 <section class="reviews">
-  <div class="container">
-    <h2>O que dizem nossos clientes</h2>
+<h2>Avaliações no Google</h2>
+<div class="carousel">
+<div class="review">
+<strong>Enésia Silva</strong>
+<div class="stars">★★★★★</div>
+<p>Advogada excelente, estou maravilhada com tudo, desde o atendimento até a solução do meu caso.</p>
+</div>
 
-    <div class="review-cards">
-      <div class="review">
-        ⭐⭐⭐⭐⭐
-        <p>Atendimento excelente, profissional e atencioso. Recomendo!</p>
-      </div>
-      <div class="review">
-        ⭐⭐⭐⭐⭐
-        <p>Esclareceu todas as minhas dúvidas e conduziu meu caso com muita competência.</p>
-      </div>
-      <div class="review">
-        ⭐⭐⭐⭐⭐
-        <p>Profissional extremamente dedicada e comprometida com o cliente.</p>
-      </div>
-    </div>
-  </div>
+<div class="review">
+<strong>Mércia Rodrigues</strong>
+<div class="stars">★★★★★</div>
+<p>Foi o caso mais rápido que resolvi na justiça. Impossível não se apaixonar pela forma como ela trabalha.</p>
+</div>
+
+<div class="review">
+<strong>Lucas Lima</strong>
+<div class="stars">★★★★★</div>
+<p>Profissional diferenciada, extremamente segura e humana. Gratidão define.</p>
+</div>
+</div>
 </section>
 
-<section class="cta">
-  <div class="container">
-    <h2>Fale agora com uma advogada especializada</h2>
-    <a href="https://wa.me/5511940165873" class="btn-primary">
-      FALE AGORA COM A DRA. VALESCA CASSIANO
-    </a>
-  </div>
-</section>
+<a class="whatsapp-float" href="https://wa.me/5511940165873">
+WhatsApp
+</a>
 
-<footer class="footer">
-  <div class="container">
-    <p>
-      Dra. Valesca Cassiano – OAB/SP 317.259<br>
-      Atendimento 100% online | Advocacia Trabalhista
-    </p>
-  </div>
+<footer>
+<p><strong>Dra. Valesca Cassiano Silva Vaccari</strong></p>
+<p>OAB/SP 317.259</p>
+<p>Atendimento Online</p>
+<p>WhatsApp: (11) 94016-5873</p>
 </footer>
 
 </body>
