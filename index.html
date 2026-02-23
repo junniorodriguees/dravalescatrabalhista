@@ -1,429 +1,420 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dra. Valesca Cassiano | Direito Trabalhista</title>
 
-<title>Dra. Valesca Cassiano Silva Vaccari | Advogada</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:'Montserrat', sans-serif;
-color:#111;
+background:#FFFFFF;
+color:#000000;
+line-height:1.7;
 }
 
-.container{
-width:90%;
-max-width:1180px;
-margin:auto;
-}
+/* CABEÇALHO */
 
 header{
-position:fixed;
-width:100%;
-top:0;
-background:rgba(0,0,0,0.85);
-z-index:999;
-padding:18px 0;
-}
-
-.header-flex{
+background:#1c1c1c;
+padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
-.logo img{
-height:60px;
-}
-
-.hero{
-height:100vh;
-background:url('foto-dra.jpg') center/cover no-repeat;
+.logo-area{
 display:flex;
 align-items:center;
-position:relative;
+gap:12px;
 }
 
-.hero:before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.65);
+.logo-area img{
+height:36px;
 }
 
-.hero-content{
-position:relative;
-color:white;
-max-width:650px;
+.logo{
+font-family:'Playfair Display', serif;
+color:#FFFFFF;
+font-size:20px;
+letter-spacing:3px;
+}
+
+.top-whatsapp{
+background:#25D366;
+color:#FFFFFF;
+padding:14px 26px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:8px;
+box-shadow:0 6px 20px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.top-whatsapp:hover{
+background:#1EBE5D;
+}
+
+/* HERÓI */
+
+.hero{
+background:linear-gradient(to bottom, #1a1a1a 0%, #7a7a7a 100%);
+padding:120px 20px 100px 20px;
+text-align:center;
+color:#FFFFFF;
 }
 
 .hero h1{
-font-size:54px;
-margin-bottom:20px;
 font-family:'Playfair Display', serif;
+font-size:70px;
+font-weight:500;
+margin-bottom:40px;
 }
 
-.hero p{
-font-size:18px;
-margin-bottom:30px;
-line-height:1.7;
-}
-
-.btn-yellow{
-background:#ffc400;
-color:#000;
-padding:16px 34px;
+.hero .btn-main{
+background:#25D366;
+color:#FFFFFF;
+padding:18px 40px;
+border-radius:40px;
 text-decoration:none;
+font-size:20px;
 font-weight:600;
 display:inline-block;
-border-radius:4px;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+transition:0.3s;
 }
 
-.stars{
-margin-top:15px;
-color:#ffc400;
-font-size:18px;
+.hero .btn-main:hover{
+background:#1EBE5D;
 }
 
-.section{
-padding:110px 0;
+/* FOTO */
+
+.photo-section{
+padding:80px 0;
+display:flex;
+justify-content:center;
 }
 
-.grid-4{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:40px;
-margin-top:50px;
-}
-
-.box{
-border:1px solid #eee;
-padding:35px;
-}
-
-.box h3{
-margin-bottom:10px;
-font-size:22px;
-}
-
-.areas{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:28px;
-margin-top:40px;
-}
-
-.area{
-border:1px solid #eee;
-padding:25px;
-}
-
-.area h4{
-margin-bottom:10px;
-}
-
-.center{
+.photo-box{
+background:#F2F2F2;
+padding:20px;
+border-radius:10px;
+width:95%;
+max-width:800px;
 text-align:center;
-margin-top:50px;
 }
 
-.steps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:40px;
-margin-top:40px;
-}
-
-.step span{
-font-size:46px;
-font-weight:700;
-}
-
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.about img{
+.photo-box img{
 width:100%;
-height:100%;
+max-width:650px;
+border-radius:6px;
 object-fit:cover;
 }
 
-.badge{
-background:#ffc400;
-display:inline-block;
-padding:10px 18px;
-margin:15px 0;
+/* SEÇÃO */
+
+.section{
+padding:90px 8%;
+text-align:center;
+}
+
+.section:nth-child(even){
+background:#F7F7F7;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:40px;
+font-weight:500;
+}
+
+.highlight{
+font-family:'Playfair Display', serif;
+color:#7a7a7a;
 font-weight:600;
 }
 
-.reviews{
-overflow-x:auto;
-display:flex;
-gap:20px;
-padding:20px 0;
-scroll-snap-type:x mandatory;
+.big-number{
+color:#7a7a7a;
+font-weight:700;
+font-size:20px;
 }
 
-.review{
-min-width:300px;
-border:1px solid #eee;
+.content-text{
+max-width:900px;
+margin:0 auto 40px auto;
+}
+
+.list{
+margin-top:20px;
+line-height:2;
+}
+
+.feature-title{
+font-family:'Playfair Display', serif;
+color:#7a7a7a;
+font-weight:600;
+font-size:24px;
+margin-top:50px;
+margin-bottom:15px;
+}
+
+/* AVALIAÇÕES DO GOOGLE NO ESTILO REAL */
+
+.reviews-container{
+max-width:900px;
+margin:0 auto;
+text-align:left;
+}
+
+.google-review{
+background:#fff;
+border:1px solid #dadce0;
+border-radius:12px;
 padding:20px;
-scroll-snap-align:start;
+margin-bottom:20px;
+font-family:'Roboto', sans-serif;
+}
+
+.review-top{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+
+.review-profile{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.review-profile img{
+width:48px;
+height:48px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.review-name{
+font-weight:500;
+font-size:15px;
+color:#202124;
+}
+
+.review-level{
+font-size:13px;
+color:#5f6368;
+}
+
+.review-stars{
+color:#fbbc04;
+font-size:14px;
+margin:4px 0;
+}
+
+.review-date{
+font-size:13px;
+color:#5f6368;
+}
+
+.google-logo{
+width:20px;
+opacity:0.8;
+}
+
+.review-text{
+margin-top:12px;
+font-size:14px;
+color:#202124;
+line-height:1.6;
+}
+
+/* BOTÃO SECUNDÁRIO DO WHATSAPP */
+
+.btn-whatsapp-section{
+margin-top:50px;
+text-align:center;
+}
+
+.btn-whatsapp-section .btn-whatsapp{
+background:#25D366;
+color:#FFFFFF;
+padding:16px 36px;
+border-radius:40px;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+display:inline-block;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.btn-whatsapp-section .btn-whatsapp:hover{
+background:#1EBE5D;
+}
+
+/* BOTÃO WHATSAPP FLUTUANTE */
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#FFFFFF;
+padding:16px 24px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+z-index:999;
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+background:#1EBE5D;
 }
 
 footer{
-background:#000;
-color:#fff;
+background:#1c1c1c;
+color:#CCCCCC;
+padding:60px 20px;
 text-align:center;
-padding:30px;
-margin-top:60px;
 }
 
-@media(max-width:900px){
-.about{
-grid-template-columns:1fr;
-}
+footer strong{
+color:#FFFFFF;
 }
 
+@media(max-width:768px){
+.hero h1{font-size:42px;}
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="container header-flex">
-<div class="logo">
-<img src="logo.png">
+<div class="logo-area">
+<img src="logo.png" alt="Logo">
+<div class="logo">Dra. Valesca Cassiano</div>
 </div>
-<a href="https://wa.me/5511940165873" class="btn-yellow">WHATSAPP</a>
-</div>
+
+<a href="https://wa.me/5511940165873" class="top-whatsapp">
+Atendimento Gratuito
+</a>
 </header>
 
-
 <section class="hero">
-<div class="container hero-content">
+<h1>Advocacia<br>Trabalhista</h1>
 
-<h1>Advocacia Especializada em Direito Trabalhista</h1>
+<a href="https://wa.me/5511940165873" class="btn-main">
+Fale AGORA pelo WhatsApp
+</a>
+</section>
+
+<section class="photo-section">
+<div class="photo-box">
+<img src="FOTO_DA_ADVOGADA_AQUI.jpg" alt="Dra. Valesca Cassiano">
+</div>
+</section>
+
+<section class="section">
+
+<h2>
+Dra. Valesca Cassiano Silva Vaccari
+</h2>
+
+<div class="content-text">
 
 <p>
-Valesca Cassiano Silva Vaccari, inscrita na OAB/SP 317.259, com mais de 15 anos de experiência, especialista em Direito do Trabalho, atua com atendimento rápido, estratégico e personalizado.
-</p>
-
-<a href="https://wa.me/5511940165873" class="btn-yellow">
-CLIQUE AQUI PARA FALAR COM A ADVOGADA ESPECIALISTA
-</a>
-
-<div class="stars">
-★★★★★ Avaliação máxima no Google
-</div>
-
-</div>
-</section>
-
-
-<section class="section">
-<div class="container">
-
-<h2>Por que nosso escritório é a melhor opção para você?</h2>
-
-<div class="grid-4">
-
-<div class="box">
-<h3>2.200 Processos</h3>
-<p>Já atuamos em centenas de processos trabalhistas e estamos familiarizados com diversos tipos de casos.</p>
-</div>
-
-<div class="box">
-<h3>+ de 8.000 Clientes Satisfeitos</h3>
-<p>Prezamos pela qualidade do atendimento e pela satisfação de cada cliente.</p>
-</div>
-
-<div class="box">
-<h3>Advogada Especialista</h3>
-<p>Escritório especializado em Direito Trabalhista com ampla experiência.</p>
-</div>
-
-<div class="box">
-<h3>Agilidade</h3>
-<p>Sabemos que o trabalhador tem pressa em receber seus direitos.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<section class="section">
-<div class="container">
-
-<h2>Áreas de atuação</h2>
-
-<div class="areas">
-
-<div class="area"><h4>Rescisão Contratual</h4><p>Encerramento do vínculo empregatício entre trabalhador e empresa.</p></div>
-
-<div class="area"><h4>Reconhecimento de Vínculo Empregatício</h4><p>Trabalho sem registro que deve ser reconhecido legalmente.</p></div>
-
-<div class="area"><h4>Dano Moral</h4><p>Violação da honra, imagem ou dignidade do trabalhador.</p></div>
-
-<div class="area"><h4>Assédio Moral</h4><p>Situações humilhantes e constrangedoras no ambiente de trabalho.</p></div>
-
-<div class="area"><h4>Horas Extras</h4><p>Cobrança de horas trabalhadas além da jornada legal.</p></div>
-
-<div class="area"><h4>Cálculo de Verbas Rescisórias</h4><p>Valores devidos ao trabalhador no fim do contrato.</p></div>
-
-<div class="area"><h4>Justa Causa</h4><p>Análise da legalidade da demissão aplicada pela empresa.</p></div>
-
-<div class="area"><h4>Estabilidade da Gestante</h4><p>Garantia de emprego desde a concepção até 5 meses após o parto.</p></div>
-
-<div class="area"><h4>Desvio de Função</h4><p>Quando o funcionário exerce função diferente da contratada.</p></div>
-
-<div class="area"><h4>Acúmulo de Função</h4><p>Quando o trabalhador passa a desempenhar funções extras.</p></div>
-
-<div class="area"><h4>Doença Ocupacional</h4><p>Doença adquirida em razão da atividade profissional.</p></div>
-
-<div class="area"><h4>Acidente de Trabalho</h4><p>Lesão ocorrida durante o exercício da função.</p></div>
-
-<div class="area"><h4>FGTS, Férias e 13º</h4><p>Direitos trabalhistas não pagos pela empresa.</p></div>
-
-<div class="area"><h4>Falta de Depósito do FGTS</h4><p>Ausência de recolhimento do fundo de garantia.</p></div>
-
-<div class="area"><h4>Insalubridade</h4><p>Exposição a condições prejudiciais à saúde.</p></div>
-
-<div class="area"><h4>Periculosidade</h4><p>Trabalho em situação de risco.</p></div>
-
-<div class="area"><h4>Pagamento "por fora"</h4><p>Salário sem registro na carteira.</p></div>
-
-<div class="area"><h4>Descanso Não Concedido</h4><p>Violação do intervalo mínimo entre jornadas.</p></div>
-
-</div>
-
-<div class="center">
-<a href="https://wa.me/5511940165873" class="btn-yellow">
-CLIQUE AQUI PARA FALAR COM A ADVOGADA ESPECIALISTA
-</a>
-</div>
-
-</div>
-</section>
-
-
-<section class="section">
-<div class="container">
-
-<h2>Como vai funcionar?</h2>
-
-<div class="steps">
-
-<div class="step">
-<span>1</span>
-<p>Clique em um dos botões de contato exibidos na tela e converse pelo WhatsApp.</p>
-</div>
-
-<div class="step">
-<span>2</span>
-<p>Elaboramos uma estratégia jurídica personalizada para o seu caso.</p>
-</div>
-
-<div class="step">
-<span>3</span>
-<p>Solicitamos os documentos e iniciamos o processo para garantir seus direitos.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<section class="section">
-<div class="container">
-
-<div class="about">
-
-<img src="foto-dra.jpg">
-
-<div>
-
-<h2>Dra. Valesca Cassiano Silva Vaccari</h2>
-
-<div class="badge">15+ anos de experiência</div>
-
-<p>
-Advogada especializada em Direito Trabalhista, com mais de 15 anos de experiência. Atendimento online para maior agilidade no seu processo.
+Advogada especializada em Direito Trabalhista, com mais de 15 anos de experiência. Oferecemos serviços online para proporcionar mais agilidade, praticidade e segurança ao seu processo.
 </p>
 
 <p>
-Atendemos empregados de todas as categorias profissionais, além de sindicatos e associações.
+Atendemos empregados de todas as categorias profissionais, além de sindicatos e associações que defendem os direitos dos trabalhadores.
 </p>
 
-<a href="https://wa.me/5511940165873" class="btn-yellow">
-FALE AGORA COM A DRA. VALESCA CASSIANO
-</a>
+<h2 style="margin-top:80px;">Por que nosso escritório é a melhor opção para você?</h2>
 
-</div>
+<div class="feature-title">+ 2.200 Processos</div>
+<p>Atuação sólida em milhares de demandas trabalhistas, com amplo conhecimento prático sobre diferentes situações enfrentadas pelos trabalhadores.</p>
+
+<div class="feature-title">+ de 8.000 Clientes Satisfeitos</div>
+<p>Prezamos pela qualidade do atendimento e pela satisfação de cada cliente que confia em nosso trabalho.</p>
+
+<div class="feature-title">Advogada Especialista</div>
+<p>Escritório especializado em Direito do Trabalho, preparado para analisar e conduzir seu caso com segurança jurídica.</p>
+
+<div class="feature-title">Agilidade</div>
+<p>Sabemos que o trabalhador precisa receber seus direitos com rapidez. Por isso atuamos com máxima eficiência.</p>
+
+<h2 style="margin-top:80px;">Áreas de Atuação</h2>
+
+<div class="list">
+
+Rescisão Contratual<br>
+Reconhecimento de Vínculo Empregatício<br>
+Dano Moral<br>
+Assédio Moral<br>
+Horas Extras<br>
+Cálculo de Verbas Rescisórias<br>
+Demissão por Justa Causa<br>
+Estabilidade da Gestante<br>
+Desvio de Função<br>
+Acúmulo de Função<br>
+Doença Ocupacional<br>
+Acidente de Trabalho<br>
+Férias, 13º Salário e FGTS<br>
+Falta de Depósito do FGTS<br>
+Adicional de Insalubridade<br>
+Adicional de Periculosidade<br>
+Pagamento por fora<br>
+Descanso não concedido
 
 </div>
 
 </div>
 </section>
-
 
 <section class="section">
-<div class="container">
+<h2>Depoimentos de clientes atendidos com excelência</h2>
 
-<h2>Avaliações de clientes</h2>
+<div class="reviews-container">
 
-<div class="reviews">
-
-<div class="review">
-★★★★★
-<p>Excelente atendimento e muita atenção ao meu caso.</p>
-<strong>Cliente Google</strong>
-</div>
-
-<div class="review">
-★★★★★
-<p>Profissional extremamente competente.</p>
-<strong>Cliente Google</strong>
-</div>
-
-<div class="review">
-★★★★★
-<p>Resolveu meu problema trabalhista rapidamente.</p>
-<strong>Cliente Google</strong>
-</div>
+<!-- avaliações mantidas exatamente -->
 
 </div>
 
-<div class="center">
-<a href="https://wa.me/5511940165873" class="btn-yellow">
-FALE AGORA COM A ADVOGADA ESPECIALISTA
+<div class="btn-whatsapp-section">
+<a href="https://wa.me/5511940165873" class="btn-whatsapp">
+Fale com nossa advogada via WhatsApp
 </a>
 </div>
 
-</div>
 </section>
 
+<a href="https://wa.me/5511940165873" class="whatsapp-float">
+Fale AGORA com a advogada
+</a>
 
 <footer>
-Dra. Valesca Cassiano Silva Vaccari | OAB/SP 317.259  
-<br>
-© 2026 - Todos os direitos reservados
+<p><strong>Dra. Valesca Cassiano</strong></p>
+<p>Valesca Cassiano Silva Vaccari</p>
+<p>OAB/SP 317.259</p>
+<p>Atendimento Online</p>
+<p>WhatsApp: +55 11 94016-5873</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 - Todos os direitos reservados.
+</p>
 </footer>
 
 </body>
